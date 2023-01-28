@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fdiaz-ca <fdiaz-ca@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: fdiaz-ca <fdiaz-ca@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 13:09:58 by fdiaz-ca          #+#    #+#             */
-/*   Updated: 2022/05/14 12:35:38 by fdiaz-ca         ###   ########.fr       */
+/*   Updated: 2023/01/28 13:42:55 by fdiaz-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void	ft_do_format(int *cnt, char c, va_list args)
 		ft_imp_mem(cnt, BL16, L16, va_arg(args, unsigned long long));
 }
 
+/* Imitates function printf */
 int	ft_printf(char const *str, ...)
 {
 	int		i;
